@@ -19,9 +19,12 @@ from rest_framework import routers
 from django.conf.urls import include
 from cadastroColetor import views
 from cadastroColetor.views import ColetorViewSet
+from noticia import views
+from noticia.views import NoticiaViewSet
 
 router = routers.DefaultRouter()
 router.register(r'coletor', ColetorViewSet)
+router.register(r'noticia', NoticiaViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
