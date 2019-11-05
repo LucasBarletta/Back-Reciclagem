@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cadastroColetor',
     'noticia',
+    'chamada',
     'rest_framework',
     'corsheaders',
     

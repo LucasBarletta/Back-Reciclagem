@@ -5,4 +5,4 @@ from cadastroColetor.models import Coletor
 class ColetorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Coletor
-        fields = ['id','nome','cpf','email','senha']
+        fields = ['id','nome','cpf','bairro','email','senha']

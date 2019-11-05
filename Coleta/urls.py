@@ -21,10 +21,13 @@ from cadastroColetor import views
 from cadastroColetor.views import ColetorViewSet
 from noticia import views
 from noticia.views import NoticiaViewSet
+from chamada.views import ChamadaViewSet
+from chamada import views
 
 router = routers.DefaultRouter()
 router.register(r'coletor', ColetorViewSet)
 router.register(r'noticia', NoticiaViewSet)
+router.register(r'chamada', ChamadaViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
